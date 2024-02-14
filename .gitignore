@@ -1,0 +1,9 @@
+#robotframework
+*.html
+*.log
+*output.xml
+*.png
+*.pyc
+*.zip
+playwright-log.txt
+Results/

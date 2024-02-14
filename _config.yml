@@ -1,0 +1,16 @@
+
+stages:
+  - test
+
+variables:
+  SELENIUM_BROWSER: "firefox"  # Define o navegador a ser usado nos testes
+
+before_script:
+  - pip install -U pip
+  - pip install robotframework selenium
+
+test:
+  stage: test
+  script:
+    - cd testerobotframework/Ecommerce
+    - robot Features/*.robot  # Executa todos os arquivos de teste na pasta 'Features'
